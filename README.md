@@ -11,11 +11,11 @@
 ### How to Run
 * 将COCO80个类全部转换成VOC格式
 ```
-python coco3voc.py --anno_file /home/cym/CYM/dataset/COCO2014/coco/annotations/instances_train2014.json --output_dir /home/cym/CYM/dataset/COCO_voc/
+python coco2voc.py --anno_file /home/cym/CYM/dataset/COCO2014/coco/annotations/instances_train2014.json --output_dir /home/cym/CYM/dataset/COCO_voc/
 ```
 * 只转换某一类，如person
 ```
-python coco3voc.py --anno_file /home/cym/CYM/dataset/COCO2014/coco/annotations/instances_train2014.json --output_dir /home/cym/CYM/dataset/COCO_voc/ --target_cls person
+python coco2voc_per_classes.py --anno_file /home/cym/CYM/dataset/COCO2014/coco/annotations/instances_train2014.json --output_dir /home/cym/CYM/dataset/COCO_voc/ --target_cls person
 ```
 > > * --anno_file: coco的标注文件, eg.[instances_train2014.json instances_val2014].
 > > * --output_dir: 保存voc格式的xml文件。
